@@ -1,49 +1,43 @@
 import React, { ReactNode } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type Props = {
   children: ReactNode;
 };
 
 const Layout: React.FC<Props> = (props) => (
-  <div>
+  <div >
     <Header />
     <div className="layout">{props.children}</div>
     <style jsx global>{`
-      html {
-        box-sizing: border-box;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
+      
 
       body {
+        overflow-x:hidden; 
         margin: 0;
         padding: 0;
-        font-size: 16px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-        background: rgba(0, 0, 0, 0.05);
+        // font-size: 16px;
+        max-width:100% ; 
+        
+        // background: rgba(0, 0, 0, 0.05);
       }
 
-      input,
-      textarea {
-        font-size: 16px;
-      }
+      // input,
+      // textarea {
+      //   font-size: 16px;
+      // }
 
       button {
         cursor: pointer;
       }
     `}</style>
-    <style jsx>{`
+    {/* <style jsx>{`
       .layout {
         padding: 0 2rem;
       }
-    `}</style>
+    `}</style> */}
+    <Footer slogan="Precision Tools, Unmatched Service" logoSrc="/assets/wg_lg_tl_stk_4cp_pos.jpg" logoAlt="Company Logo" />
   </div>
 );
 

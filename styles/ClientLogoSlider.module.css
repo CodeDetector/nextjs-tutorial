@@ -1,0 +1,58 @@
+.sliderContainer {
+    overflow: hidden;
+    /* padding: 10px 0; */
+
+    background: white;
+    white-space: nowrap;
+    height : 60vh ; 
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 10%; */
+    display: flex;
+    /* margin-bottom: 10%; */
+    flex-direction: column;
+  }
+  .heading {
+    font-size: xx-large;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-transform: uppercase;
+    padding-top:  0%;
+    padding: 1%;
+    font-family:Helvetica;
+    position: relative; /* Add this */
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* Adjust this value to change the line length */
+    height: 3px; /* Adjust this value to change the line thickness */
+    background-color: black; /* You can change this to any color you prefer */
+    
+}
+  .slider {
+    padding: 5rem;
+    padding-left: 0rem ;
+    display: inline-block;
+    animation: slide 30s linear infinite;
+  }
+  
+  .slide {
+    display: inline-block;
+    margin: 1% ;  
+    /* margin:  */
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

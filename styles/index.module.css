@@ -1,0 +1,19 @@
+.container{
+    display: flex; 
+    width : 100vw ; 
+    height : 100vh ; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    
+    justify-content: center;
+    flex-direction: column;
+    /* padding:100px; */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+   
+}
+.container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,19 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .slogan {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    /* width: 100px; */
+    height: auto;
+  }
+  

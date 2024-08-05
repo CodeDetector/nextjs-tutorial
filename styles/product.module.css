@@ -1,0 +1,165 @@
+.container{
+    display: flex; 
+    width : 100%; 
+    height : 100% ; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    
+    /* justify-content: center; */
+    flex-direction: column;
+    /* padding:100px; */
+   
+}
+
+.sectorContainer {
+    
+    height:100% ; 
+    font-size: xx-large;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    /* text-transform: uppercase; */
+    padding-top:  0%;
+    padding: 1%;
+    font-family:Arial, Helvetica, sans-serif;
+    /* position: relative; Add this */
+    flex-direction: column;
+    /* transform: perspective(800px) rotateY(0) rotateX(2deg); */
+   
+}
+
+.sectorHeading {
+    font-size: xx-large;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-transform: uppercase;
+    padding-top:  5%;
+    margin-bottom: 3%;
+    /* padding: 1%; */
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative; /* Add this */
+}
+
+.sectorHeading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Adjust this value to change the line length */
+    height: 3px; /* Adjust this value to change the line thickness */
+    background-color: black; /* You can change this to any color you prefer */
+    
+}
+
+.sectorProductList{
+    width: 80%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    /* text-transform: uppercase; */
+    padding-top:  3rem;
+    /* padding: 1%; */
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative; /* Add this */
+    flex-direction: column;
+}
+
+
+.productContainer {
+    display: flex;
+    font-size: xx-large;
+    flex-direction: row;
+    display: flex; 
+    /* justify-content: center; */
+    /* align-items: center;  */
+    /* text-transform: uppercase; */
+    padding-top:  0%;
+    padding: 1%;
+    padding-bottom: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* background: linear-gradient(45deg, #f0f0f0, #ffffff);
+    box-shadow: 
+        15px 15px 20px rgba(12, 12, 12, 0.1),
+        -15px -15px 20px rgba(255, 255, 255, 0.5),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s ease; */
+    /* position: relative; Add this */
+}
+/* .productContainer:hover {
+    box-shadow: 
+        20px 20px 30px rgba(250, 248, 248, 0.015),
+        -20px -20px 30px rgba(255, 255, 255, 0.8),
+        inset 10px 10px 15px rgba(0, 0, 0, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.8);
+} */
+.productContainer.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+.productDetailsContainer{
+    padding:1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: medium;
+    font-weight: 100;
+}
+/* .productContainer{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+} */
+.contactButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;  /* 20px was too small, adjusted to a more realistic size */
+    height: 50px;  /* 10px was too small, adjusted to a more realistic size */
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    color: black;
+    background-color: white;  /* Slightly lighter black on hover */
+    border: 1px solid black;
+  }
+
+  .contactButtonInverted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;  /* 20px was too small, adjusted to a more realistic size */
+    height: 50px;  /* 10px was too small, adjusted to a more realistic size */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButtonInverted:hover {
+    color: white;
+    background-color: black;  /* Slightly lighter black on hover */
+    border: 1px solid black;
+  }
+

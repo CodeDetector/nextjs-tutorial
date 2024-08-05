@@ -1,0 +1,39 @@
+.caret {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    color: white;
+  }
+  
+  .caret.open {
+    transform: rotate(180deg);
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Add padding for spacing between items */
+  }
+  
+  .navLink:hover {
+    text-decoration: none;
+    color:gray;
+  }
+  
+  .navbarNav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .customCaret {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    color: white;
+  }
+  
+  .customCaret.open {
+    transform: rotate(180deg);
+  }
+  
