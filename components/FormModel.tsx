@@ -14,8 +14,9 @@ const FormModal: React.FC<FormModalProps> = ({ show, handleClose, productName })
     const [message, setMessage] = useState("");
     const [name , setName] = useState("") ; 
     const [companyName , setCompany] = useState(""); 
+    const [mobile , setMobile] = useState("");
 
-    const sendEmail = async (name:String , companyName:string , emailID : String , productName: string , message :String) => {
+    const sendEmail = async (name:String , companyName:string ,mobile:String ,  emailID : String , productName: string , message :String) => {
         // console.log("Username is : " , username )
         const response = await fetch('/api/send-email', {
             method: 'POST',
@@ -24,7 +25,7 @@ const FormModal: React.FC<FormModalProps> = ({ show, handleClose, productName })
             },
             body: JSON.stringify({
                 subject: `Inquiry about ${productName}`,
-                text: message.length==0?`Hello! My name is ${name} . \nI am from ${companyName} company. \n My EmailID is ${emailID}. \n Hello, I would like to know more about ${productName}.` : ` Hello! My name is ${name} .\n I am from ${companyName} company \n. My EmailID is ${emailID}. \n  I wanted to add the questions -  \n `  + message ,
+                text: message.length==0?`Name : ${name} . \n Company of origin : ${companyName}. \n Mobile : ${mobile}\n EmailID : ${emailID}. \n Product of  interest :\n ${productName}.` :`Name : ${name} . \n Company of origin : ${companyName}. \n Mobile : ${mobile}\n EmailID : ${emailID}. \n  Product of  interest :\n ${productName}.`   + message ,
             }),
             
         });
@@ -42,7 +43,7 @@ const FormModal: React.FC<FormModalProps> = ({ show, handleClose, productName })
     };
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        sendEmail(name , companyName , username, productName, message);
+        sendEmail(name , companyName ,mobile, username, productName, message);
         handleClose();
     };
 
@@ -68,6 +69,15 @@ const FormModal: React.FC<FormModalProps> = ({ show, handleClose, productName })
                             type="text"
                             value={companyName}
                             onChange={(e) => setCompany(e.target.value)}
+                            required
+                        />
+                    </Form.Group>
+                    <Form.Group controlId="formUsername" className={styles.formGroup}>
+                        <Form.Label style={{fontWeight:"bold" , padding:"1px"}}>Mobile Number</Form.Label>
+                        <Form.Control
+                            type="text"
+                            value={mobile}
+                            onChange={(e) => setMobile(e.target.value)}
                             required
                         />
                     </Form.Group>
