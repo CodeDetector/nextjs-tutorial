@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Video Background Page</title>
+        <title>Quadrant Marketing</title>
         <meta name="description" content="Page with video background" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

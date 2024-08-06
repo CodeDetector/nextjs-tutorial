@@ -19,8 +19,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   // const engine = new Styletron() ;
 
   return (
-      
-        <Layout   >
+        <Layout >
         <Component {...pageProps}  />
         </Layout>
       

@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10%px;
     background-color: #f8f8f8;
+    /* position: relative; */
   }
   
   .slogan {

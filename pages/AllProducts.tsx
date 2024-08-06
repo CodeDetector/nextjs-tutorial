@@ -1,6 +1,7 @@
 import React from "react" ; 
 import { propsList } from "../components/Product";
 import Product from "../components/Product";
+
 import Layout from "../components/Layout";
 
 const productList: any= [
@@ -163,7 +164,7 @@ Productivity: High X-ray dose rate for short exposure times and high output. `,
             {
                 sectorName :"RADIOGRAPHIC TESTING (RT) SOLUTIONS" , 
                 productName : "ISOVOLT" ,
-                productDetails :`Proven Reliability</b>: Based on the Seifert ISOVOLT platform with over 25 years of experience and thousands of installations.\n
+                productDetails :`Proven Reliability: Based on the Seifert ISOVOLT platform with over 25 years of experience and thousands of installations.\n
 Versatile Applications: Designed for radiography, radioscopy, radiometry, and life-science applications demanding high reliability and quality.\n
 Customization: Meets various degrees of automation and customization for industrial and scientific needs.\n
 Wide Range of Systems: Offers generators and tubes from 160 kV to 450 kV, operable from as low as 5 kV and up to 45 mA.\n
@@ -181,7 +182,11 @@ Advanced Control: Features a state-of-the-art industrial control module for fail
 const AllProducts:React.FC<propsList> = ({pp})=>{
     return(
         // <Layout>
+        <div style={{width:"100%"}}>
             <Product pp={productList} /> 
+
+        </div>
+            
         // </Layout>
     )
 }

@@ -1,7 +1,13 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Image from "next/image"
 
 const Contact : React.FC = () =>{
+
+    useEffect(()=>
+    {
+        document.title = "Contact "
+    }
+    ,[])
     return(
         <div style = {{width:"100vw" , height : "100vh"  }}>
             <div style={{paddingTop:"5%" , }}>

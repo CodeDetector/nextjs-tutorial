@@ -48,13 +48,13 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="black" expand="lg" sticky='top'>
+    <Navbar bg="black" expand="lg" sticky='top' style={{width:'100vw'}}>
       <Container>
         <Navbar.Brand href="/">
           <img
             src="/assets/image.png"
-            width="100%"
-            height="50"
+            width="70%"
+            height="40"
             className="d-inline-block align-top"
             alt="Company logo"
           />

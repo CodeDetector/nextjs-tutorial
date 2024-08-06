@@ -101,7 +101,7 @@ const Product: React.FC<propsList> = ({ pp }) => {
                                     }
                                 }}
                             >
-                                <div style={{ width: "70%" }}>
+                                <div style={{ width: "80%" }}>
                                     <h2 className={styles.productName}>{prod.productName}</h2>
                                     <div className={styles.productDetailsContainer}>
                                     {
@@ -110,7 +110,7 @@ const Product: React.FC<propsList> = ({ pp }) => {
                                             let bod = substring.split(":")[1]
                                             return(
                                                 // <span>
-                                                    <div>
+                                                    <div style={{width:'100%', paddingLeft:'2%'}}>
                                                             <p key={index} className={styles.productDetails} style={{fontWeight:"bold" }}>{head}</p>
                                                             <p  className={styles.productDetails} style={{paddingLeft:"2rem"}}>{bod}</p>
                                                     </div>

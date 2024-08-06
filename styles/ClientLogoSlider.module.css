@@ -1,7 +1,7 @@
 .sliderContainer {
     overflow: hidden;
     /* padding: 10px 0; */
-
+    margin-top: 0%;
     background: white;
     white-space: nowrap;
     height : 60vh ; 
@@ -30,7 +30,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 20%; /* Adjust this value to change the line length */
+    width: 40%; /* Adjust this value to change the line length */
     height: 3px; /* Adjust this value to change the line thickness */
     background-color: black; /* You can change this to any color you prefer */
     

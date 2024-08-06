@@ -25,11 +25,15 @@ const SectorComponent: React.FC<sectorPropsList> = ({sectorProps}) => {
         {
             sectorProps.map((sector ,  index)=>
                 <div key={index} className={styles.cardItem}>
-                    
-                    <h2 className={styles.cardItemTitle}> {sector.title}</h2>
-                    <p className ={styles.cardItemDescription}>
+                    <div className={styles.cardItemTitle}>
+                        <h2 style={{fontSize:"1.5vw"}}> {sector.title}</h2>
+                    </div>
+                    <div className ={styles.cardItemDescription}>
+                    <p >
                         {sector.description}
                     </p>
+                    </div>
+                    
                     <div style={{display:"flex",justifyContent:"center" , alignItems:"center"}}>
                     <Link href={`/AllProducts#${sector.sectionId}`} className={styles.contactButton}>
                         Learn More

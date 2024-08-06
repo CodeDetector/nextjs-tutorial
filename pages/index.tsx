@@ -3,18 +3,19 @@ import React from "react"
 // import Layout from "../components/Layout"
 // import Post, { PostProps } from "../components/Post"
 // import prisma from "../lib/prisma"
+// import componen'
+import Head from 'next/head'
 import { useState , useEffect } from "react";
-import { GetStaticProps } from 'next';
-import fs from 'fs';
-import path from 'path';
+// import { GetStaticProps } from 'next';
+// import fs from 'fs';
+// import path from 'path';
 import ClientLogoSlider from "./ClientLogoSlider";
 import Footer from "../components/Footer";
 import AboutUs from "../components/AboutUs";
 import SectorComponent, { sectorPropsList  ,sectorProps  }  from "../components/SectorComponent";
+// import Document from "next/document";
 // import { sectorProps } from "../components/SectorComponent";
-interface HomeProps {
-  clientLogos: string[];
-}
+
 
 const clientLogos = [
   { src: '/assets/image.png', alt: 'Client 1' },
@@ -65,11 +66,18 @@ const sectorList : any= [
 //   }
 // };
 const Idx: React.FC= () =>{
+  
 
   // const getImages = images 
   const [clientLogos, setClientLogos] = useState<string[]>([]);
+  useEffect(()=>
+    {
+        document.title = "Contact "
+    }
+    ,[])
 
   useEffect(() => {
+    // document.title = "Quadrant Marketing";
     fetch('/api/client-logos')
       .then(response =>response.json())
       .then(data => setClientLogos(data))
@@ -79,21 +87,14 @@ const Idx: React.FC= () =>{
 
   
   return(
-    <div  >
+    <div  style={{display : "flex" , flexDirection:"column" ,maxHeight:"100%" ,  height:"100%"}}>
       <AboutUs/>
-      <div style={{paddingTop:"2rem"}}>
+  
         <SectorComponent sectorProps={sectorList}/>
-      </div>
-      
-      {/* <div>
-        <CarouselComp images={images} />
-      </div> */}
+  
      
         <ClientLogoSlider images={clientLogos} /> 
-      
-      {/* <div>
-        <Footer slogan="Precision Tools, Unmatched Service" logoSrc="/assets/wg_lg_tl_stk_4cp_pos.jpg" logoAlt="Company Logo" />
-      </div> */}
+  
     </div>
     
   )

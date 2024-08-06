@@ -29,8 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;  /* 20px was too small, adjusted to a more realistic size */
-    height: 50px;  /* 10px was too small, adjusted to a more realistic size */
+    width: 30%;  /* 20px was too small, adjusted to a more realistic size */
+    height: 10%;  /* 10px was too small, adjusted to a more realistic size */
     background-color: black;
     color: white;
     text-decoration: none;
