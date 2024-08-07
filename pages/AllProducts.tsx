@@ -172,6 +172,31 @@ Advanced Control: Features a state-of-the-art industrial control module for fail
                 productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-radiography-and-ct/xray-tubes-and-generators/isovolt-xray-tubes`  ,
                 imgSrc:`/assets/productImages/ISOVOLT.png`
 
+            },
+            {
+                sectorName :"RADIOGRAPHIC TESTING (RT) SOLUTIONS" , 
+                productName : "CRxVision" ,
+                productDetails :`Advanced Optics: The device features larger, brighter displays (3.7" and 5" options) with advanced optics to reduce eyestrain and improve accuracy in visual inspections.\n
+Military-Grade Durability: Built to withstand harsh industrial environments, meeting IP65/IP55 and MIL-STD-810G, MIL-STD-461F standards for ruggedness and reliability.\n
+Intuitive MDI System: Incorporates an Intuitive Menu Directed Inspection (MDI) system that automates result organization and simplifies reporting processes.\n
+Versatile Application: Lightweight and portable design suitable for various challenging scenarios, from wind turbines to jet engines, indicating broad industrial applicability.\n
+Enhanced Inspection Capability: Improves probability of detection, speeds up workflows, and delivers confident results in demanding industrial settings, suggesting advanced sensor or imaging technology.
+` , 
+                productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-radiography-and-ct/computed-digital-radiography-crdr/computed-radiography-cassettes/crxvision-high-resolution-cr-scanner`  ,
+                imgSrc:`/assets/productImages/crx.png`
+
+            },
+            {
+                sectorName :"RADIOGRAPHIC TESTING (RT) SOLUTIONS" , 
+                productName : "Digital X-Ray Detectors" ,
+                productDetails :`Sensor Technology: Amorphous silicon or selenium flat panel detectors with direct X-ray conversion, offering pixel pitches <100 μm for high spatial resolution.\n
+Image Quality: Wide dynamic range (>14-bit) with 16-bit digitization, enabling accurate imaging across diverse material densities.\n
+Acquisition Speed: High frame rates (>30 fps) for real-time radiography, supporting dynamic inspection processes.\n
+Environmental Durability: IP65/67 rated enclosures designed for harsh industrial environments, ensuring durability and reliability.\n
+Image Processing: Advanced algorithms, including multi-frame averaging and adaptive histogram equalization, for enhanced defect detection and analysis.` , 
+                productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-radiography-and-ct/computed-digital-radiography-crdr/dxr-digital-xray-detectors`  ,
+                imgSrc:`/assets/productImages/dxr.png`
+
             }
         ]
     },
