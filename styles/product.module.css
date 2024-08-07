@@ -210,9 +210,6 @@
     font-weight: bold;
 }
 
-.productDetailBody {
-    padding-left: 1rem;
-}
 
 .Image {
     width: 100%;
@@ -252,4 +249,9 @@
     .Image {
         margin-top: 1rem;
     }
+    
+.productDetailBody {
+    font-size: small;
+    /* padding-left: 1rem; */
+}
 }
