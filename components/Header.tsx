@@ -26,9 +26,9 @@ const Header = () => {
         </div>
         <Navbar.Collapse id="basic-navbar-nav" className={`${styles.navbarCollapse} ${isOpen ? styles.show : ''}`}>
           <Nav className={styles.navbarNav}>
-            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem' }} href="AllProducts">PRODUCT</Nav.Link>
-            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem'}} href="About">ABOUT</Nav.Link>
-            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem' }} href="Contact">CONTACT</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '1rem' }} href="AllProducts">PRODUCT</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '1rem'}} href="About">ABOUT</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '1rem' }} href="Contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -119,7 +119,7 @@ const Product: React.FC<propsList> = ({ pp }) => {
                                             Learn More
                                         </Link>
                                         <Link href={"#"} className={styles.contactButtonInverted} onClick={() => openModal(prod.productName)}>
-                                            Request a Call
+                                            Inquire
                                         </Link>
                                     </div>
                                 </div>
