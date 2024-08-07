@@ -92,50 +92,42 @@ const Product: React.FC<propsList> = ({ pp }) => {
 
                     <div className={styles.sectorProductList}>
                         {sector.p.map((prod, ndx) => (
-                            <div
-                                key={ndx}
-                                className={styles.productContainer}
-                                ref={(el) => {
-                                    if (el && !productRefs.current.includes(el)) {
-                                        productRefs.current.push(el);
-                                    }
-                                }}
-                            >
-                                <div style={{ width: "80%" }}>
-                                    <h2 className={styles.productName}>{prod.productName}</h2>
-                                    <div className={styles.productDetailsContainer}>
-                                    {
-                                        prod.productDetails.split("\n").map((substring, index) =>{
-                                            let head = substring.split(":")[0]
-                                            let bod = substring.split(":")[1]
-                                            return(
-                                                // <span>
-                                                    <div style={{width:'100%', paddingLeft:'2%'}}>
-                                                            <p key={index} className={styles.productDetails} style={{fontWeight:"bold" }}>{head}</p>
-                                                            <p  className={styles.productDetails} style={{paddingLeft:"2rem"}}>{bod}</p>
-                                                    </div>
-                                                    
-                                                // </span>
-                                                // <p key={index} className={styles.productDetails}>{head}{bod}</p>
-                                            )
-                                        })
-                                    }
-                                    </div>
-                                    
-                                    
-                                    <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
-                                        <Link style={{margin:30 }} href={prod.productBakerHugesLink} className={styles.contactButton}>
-                                            Learn More
-                                        </Link>
-                                        <Link href={"#"} className={styles.contactButtonInverted}  onClick={() => openModal(prod.productName)}>
-                                            Request a Call
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className={styles.Image} style={{ width: "30%", padding: "1%", paddingLeft: "0%" }}>
-                                    <img src={prod.imgSrc} alt="image" width={"100%"} height={"80%"} />
-                                </div>
-                            </div>
+        
+<div className={styles.productContainer} key={ndx} ref={(el) => {
+    if (el && !productRefs.current.includes(el)) {
+        productRefs.current.push(el);
+    }
+}}>
+    <div className={styles.productContent}>
+        <div className={styles.productDescription}>
+            <h2 className={styles.productName}>{prod.productName}</h2>
+            <div className={styles.productDetailsContainer}>
+                {prod.productDetails.split("\n").map((substring, index) => {
+                    let [head, ...bodParts] = substring.split(":");
+                    let bod = bodParts.join(":"); // In case there are colons in the body
+                    return (
+                        <div key={index} className={styles.productDetailItem}>
+                            <p className={styles.productDetailHead}>{head}</p>
+                            <p className={styles.productDetailBody}>{bod}</p>
+                        </div>
+                    );
+                })}
+            </div>
+            <div className={styles.buttonContainer}>
+                <Link href={prod.productBakerHugesLink} className={styles.contactButton}>
+                    Learn More
+                </Link>
+                <Link href="#" className={styles.contactButtonInverted} onClick={() => openModal(prod.productName)}>
+                    Request a Call
+                </Link>
+            </div>
+        </div>
+        <div className={styles.productImage}>
+            <img src={prod.imgSrc} alt="product image" />
+        </div>
+    </div>
+</div>
+
                         ))}
                     </div>
                 </div>

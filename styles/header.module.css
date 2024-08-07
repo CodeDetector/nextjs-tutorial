@@ -1,39 +1,40 @@
-.caret {
-    display: inline-block;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-    color: white;
+.navbar {
+  width: 100%;
+}
+
+.navbarNav {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: white !important;
+  margin: 0 10px;
+}
+
+@media (max-width: 991px) {
+  .navbarCollapse {
+    position: fixed;
+    top: 56px; /* Adjust this value based on your navbar height */
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
   }
-  
-  .caret.open {
-    transform: rotate(180deg);
+
+  .navbarCollapse.show {
+    transform: translateY(0);
   }
-  
-  .navLink {
-    color: white;
-    text-decoration: none !important;
-    display: flex;
-    align-items: center;
-    padding: 0 10px; /* Add padding for spacing between items */
-  }
-  
-  .navLink:hover {
-    text-decoration: none;
-    color:gray;
-  }
-  
+
   .navbarNav {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  .customCaret {
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-    color: white;
+
+  .navLink {
+    padding: 10px;
+    text-align: center;
   }
-  
-  .customCaret.open {
-    transform: rotate(180deg);
-  }
-  
+}

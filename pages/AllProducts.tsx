@@ -1,7 +1,7 @@
 import React from "react" ; 
 import { propsList } from "../components/Product";
 import Product from "../components/Product";
-
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 const productList: any= [
@@ -182,7 +182,12 @@ Advanced Control: Features a state-of-the-art industrial control module for fail
 const AllProducts:React.FC<propsList> = ({pp})=>{
     return(
         // <Layout>
-        <div style={{width:"100%"}}>
+        <div style={{width:"100vw", overflow: "hidden"}}>
+            <Head>
+                <title>Quadrant Marketing : Products</title>
+                <meta name="description" content="Page with video background" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Product pp={productList} /> 
 
         </div>

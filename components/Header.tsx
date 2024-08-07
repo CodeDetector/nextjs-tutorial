@@ -1,54 +1,17 @@
-import React from 'react';
-import { Navbar, Nav, Container, Dropdown } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from  "../styles/header.module.css" ; 
-// import logo from '../public/assets/image.png'
-import { useState } from 'react';
-
-interface CustomToggleProps {
-  children?: React.ReactNode;
-  onClick: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-  isOpen: boolean;
-}
-
-const CustomToggle = React.forwardRef<HTMLAnchorElement, CustomToggleProps>(({ children, onClick , isOpen }, ref) => (
-  <a
-    href="#"
-    ref={ref}
-    onMouseOver={(e) => {
-      e.preventDefault();
-      onClick(e);
-    }}
-    className={styles.navLink}
-  >
-    {children}
-    <svg
-      className={`${styles.caret} ${isOpen ? styles.open : ''}`}
-      xmlns="http://www.w3.org/2000/svg"
-      width="10"
-      height="10"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="6 9 12 15 18 9"></polyline>
-    </svg>
-  </a>
-));
-
+import styles from "../styles/header.module.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <Navbar bg="black" expand="lg" sticky='top' style={{width:'100vw'}}>
+    <Navbar bg="black" expand="lg" sticky='top' className={styles.navbar}>
       <Container>
         <Navbar.Brand href="/">
           <img
@@ -56,11 +19,11 @@ const Header = () => {
             width="70%"
             height="40"
             className="d-inline-block align-top"
-            alt="Company logo"
+            alt="Quadrant Marketing"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} />
+        <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-end ${styles.navbarCollapse} ${isOpen ? styles.show : ''}`}>
           <Nav className={styles.navbarNav}>
             <Nav.Link className={styles.navLink} href="AllProducts">PRODUCT</Nav.Link>
             <Nav.Link className={styles.navLink} href="About">ABOUT US</Nav.Link>
@@ -72,5 +35,4 @@ const Header = () => {
   );
 };
 
-
-export default Header 
+export default Header;

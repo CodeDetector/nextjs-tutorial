@@ -34,7 +34,7 @@ const SectorComponent: React.FC<sectorPropsList> = ({sectorProps}) => {
                     </p>
                     </div>
                     
-                    <div style={{display:"flex",justifyContent:"center" , alignItems:"center"}}>
+                    <div style={{display:"flex",justifyContent:"center" , alignItems:"center" ,margin:"2%" , height : "10%"}}>
                     <Link href={`/AllProducts#${sector.sectionId}`} className={styles.contactButton}>
                         Learn More
                     </Link>
