@@ -26,7 +26,7 @@ const SectorComponent: React.FC<sectorPropsList> = ({sectorProps}) => {
             sectorProps.map((sector ,  index)=>
                 <div key={index} className={styles.cardItem}>
                     <div className={styles.cardItemTitle}>
-                        <h2 style={{fontSize:"1.5vw"}}> {sector.title}</h2>
+                        <h3 style={{fontSize:"1.5vw"}}> {sector.title}</h3>
                     </div>
                     <div className ={styles.cardItemDescription}>
                     <p >

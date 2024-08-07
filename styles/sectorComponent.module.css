@@ -118,6 +118,7 @@
         flex-wrap: wrap;
         flex-flow: wrap;
         gap: 1rem;
+        flex-direction: row;
     }
     .cardItem{
         height: 50%;

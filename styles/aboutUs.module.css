@@ -104,3 +104,9 @@
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 768px) {
+    .content h1 {
+      font-size: 2rem;
+    }
+  }

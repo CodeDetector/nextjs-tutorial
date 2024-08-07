@@ -12,22 +12,23 @@ const Header = () => {
 
   return (
     <Navbar bg="black" expand="lg" sticky='top' className={styles.navbar}>
-      <Container>
-        <Navbar.Brand href="/">
-          <img
-            src="/assets/image.png"
-            width="70%"
-            height="40"
-            className="d-inline-block align-top"
-            alt="Quadrant Marketing"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} />
-        <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-end ${styles.navbarCollapse} ${isOpen ? styles.show : ''}`}>
+      <Container className={styles.navbarContainer}>
+        <div className={styles.brandToggleWrapper}>
+          <Navbar.Brand href="/" className={styles.navbarBrand}>
+            <img
+              src="/assets/image.png"
+              height="20"
+              className="d-inline-block align-top"
+              alt="Quadrant Marketing"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} className={styles.navbarToggle} />
+        </div>
+        <Navbar.Collapse id="basic-navbar-nav" className={`${styles.navbarCollapse} ${isOpen ? styles.show : ''}`}>
           <Nav className={styles.navbarNav}>
-            <Nav.Link className={styles.navLink} href="AllProducts">PRODUCT</Nav.Link>
-            <Nav.Link className={styles.navLink} href="About">ABOUT US</Nav.Link>
-            <Nav.Link className={styles.navLink} href="Contact">CONTACT US</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem' }} href="AllProducts">PRODUCT</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem'}} href="About">ABOUT</Nav.Link>
+            <Nav.Link className={styles.navLink} style={{ fontSize: '0.8rem' }} href="Contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

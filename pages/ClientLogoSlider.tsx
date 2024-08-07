@@ -15,7 +15,7 @@ const ClientLogoSlider: React.FC<GalleryProps> = ({ images }) => {
   return (
     <div className={styles.sliderContainer}>
       <div className={styles.heading}>
-        <h3 style={{color:"black"}}> WHO WE WORK WITH </h3>
+        <h3 style={{color:"black" }}> WHO WE WORK WITH </h3>
       </div>
       <div className={styles.slider}>
         {images.map((logo, index) => (

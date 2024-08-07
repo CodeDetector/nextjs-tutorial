@@ -1,10 +1,10 @@
 .sliderContainer {
     overflow: hidden;
     /* padding: 10px 0; */
-    margin-top: 0%;
+    margin-top:5%;
     background: white;
     white-space: nowrap;
-    height : 60vh ; 
+    height : 50vh ; 
     /* justify-content: center;
     align-items: center; */
     /* padding: 10%; */
@@ -36,7 +36,7 @@
     
 }
   .slider {
-    padding: 5rem;
+    padding: 4rem;
     padding-left: 0rem ;
     display: inline-block;
     animation: slide 30s linear infinite;

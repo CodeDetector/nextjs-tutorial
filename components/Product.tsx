@@ -82,63 +82,62 @@ const Product: React.FC<propsList> = ({ pp }) => {
    
     return (
         <div className={styles.container}>
-            {pp.map((sector, index) => (
-                
-                <div className={styles.sectorContainer} key={index} id={sector.sectorName.toLowerCase().replace(/\s/g, '')}>
-                    {console.log("sector : " , sector.sectorName.replace(' ', '').toLowerCase()) }
-                    <div className={styles.sectorHeading}>
-                        <h2 style={{ textTransform: "uppercase" }}>{sector.sectorName}</h2>
-                    </div>
-
-                    <div className={styles.sectorProductList}>
-                        {sector.p.map((prod, ndx) => (
-        
-<div className={styles.productContainer} key={ndx} ref={(el) => {
-    if (el && !productRefs.current.includes(el)) {
-        productRefs.current.push(el);
-    }
-}}>
-    <div className={styles.productContent}>
-        <div className={styles.productDescription}>
-            <h2 className={styles.productName}>{prod.productName}</h2>
-            <div className={styles.productDetailsContainer}>
-                {prod.productDetails.split("\n").map((substring, index) => {
-                    let [head, ...bodParts] = substring.split(":");
-                    let bod = bodParts.join(":"); // In case there are colons in the body
-                    return (
-                        <div key={index} className={styles.productDetailItem}>
-                            <p className={styles.productDetailHead}>{head}</p>
-                            <p className={styles.productDetailBody}>{bod}</p>
-                        </div>
-                    );
-                })}
-            </div>
-            <div className={styles.buttonContainer}>
-                <Link href={prod.productBakerHugesLink} className={styles.contactButton}>
-                    Learn More
-                </Link>
-                <Link href="#" className={styles.contactButtonInverted} onClick={() => openModal(prod.productName)}>
-                    Request a Call
-                </Link>
-            </div>
-        </div>
-        <div className={styles.productImage}>
-            <img src={prod.imgSrc} alt="product image" />
-        </div>
-    </div>
-</div>
-
-                        ))}
-                    </div>
+        {pp.map((sector, index) => (
+            <div className={styles.sectorContainer} key={index} id={sector.sectorName.toLowerCase().replace(/\s/g, '')}>
+                <div className={styles.sectorHeading}>
+                    <h3 style={{ textTransform: "uppercase" }}>{sector.sectorName}</h3>
                 </div>
-            ))}
-            <FormModal
-                show={modalShow}
-                handleClose={closeModal}
-                productName={currentProductName}
-                // onSubmit={sendEmail}
-            />
-        </div>
+
+                <div className={styles.sectorProductList}>
+                    {sector.p.map((prod, ndx) => (
+                        <div
+                            key={ndx}
+                            className={styles.productContainer}
+                            ref={(el) => {
+                                if (el && !productRefs.current.includes(el)) {
+                                    productRefs.current.push(el);
+                                }
+                            }}
+                        >
+                            <h2 className={styles.productName}>{prod.productName}</h2>
+                            <div className={styles.productContent}>
+                                <div className={styles.productDescription}>
+                                    <div className={styles.productDetailsContainer}>
+                                        {prod.productDetails.split("\n").map((substring, index) => {
+                                            let [head, bod] = substring.split(":");
+                                            return (
+                                                <div key={index} className={styles.productDetail}>
+                                                    <p className={styles.productDetailHead}>{head}</p>
+                                                    <p className={styles.productDetailBody}>{bod}</p>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    
+                                    <div className={styles.buttonContainer}>
+                                        <Link href={prod.productBakerHugesLink} className={styles.contactButton}>
+                                            Learn More
+                                        </Link>
+                                        <Link href={"#"} className={styles.contactButtonInverted} onClick={() => openModal(prod.productName)}>
+                                            Request a Call
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className={styles.Image}>
+                                    <img src={prod.imgSrc} alt="product image" />
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        ))}
+        <FormModal
+            show={modalShow}
+            handleClose={closeModal}
+            productName={currentProductName}
+        />
+    </div>
     );
 };
 
