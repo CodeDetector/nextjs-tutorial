@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
     <div className={styles.container}>
       <Head>
         <title>Quadrant Marketing</title>
-        <meta name="description" content="Page with video background" />
+        <meta name="description" content="Authorised Distributor of Baker Hughes NDT Equipment" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
