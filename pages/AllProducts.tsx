@@ -176,11 +176,12 @@ Advanced Control: Features a state-of-the-art industrial control module for fail
             {
                 sectorName :"RADIOGRAPHIC TESTING (RT) SOLUTIONS" , 
                 productName : "CRxVision" ,
-                productDetails :`Advanced Optics: The device features larger, brighter displays (3.7" and 5" options) with advanced optics to reduce eyestrain and improve accuracy in visual inspections.\n
-Military-Grade Durability: Built to withstand harsh industrial environments, meeting IP65/IP55 and MIL-STD-810G, MIL-STD-461F standards for ruggedness and reliability.\n
-Intuitive MDI System: Incorporates an Intuitive Menu Directed Inspection (MDI) system that automates result organization and simplifies reporting processes.\n
-Versatile Application: Lightweight and portable design suitable for various challenging scenarios, from wind turbines to jet engines, indicating broad industrial applicability.\n
-Enhanced Inspection Capability: Improves probability of detection, speeds up workflows, and delivers confident results in demanding industrial settings, suggesting advanced sensor or imaging technology.
+                productDetails :`Weld standards and diconde compliant : Compliant to ISO 17636-2 Class A and B, ASME, ASTM and EN weld inspection standard.\n
+High Resolution : Extremely wide latitude eliminating the need for multiple gain settings when exposing over a wide range of thicknesses. Providing 40 micron SRb, the CRxVision is offering the highest resolution outcome in NDT. Extremely wide latitude eliminating the need for multiple gain settings when exposing over a wide range of thicknesses.\n
+Designed for extremely high throughput: 90 plates/hr at 70 microns or 28 plates/hr at 35 microns for a 10 x 40 cm (4.5 x 17”) plate.Allows multiple imaging plates to be scanned simultaneously reaching 84 plates/hour at 35 microns for 10 x 40 cm (4.5 x 17”) plate at 3 image plates entry.\n
+Flexible : Ability to scan any shape or size of imaging plate from 20 to 1500 mm (0.75 to 60”) in length.\n
+Extended plate life : Each imaging plate has the ability to return to a flat state after being constantly bent around pipes for the inspection of welds.Improves productivity by allowing the imaging plates to be easily extracted and reinserted into cassettes.\n
+Simplifies inspection workflow: Ability to automatically crop the images by detecting the physical edges of each individual plate when they are processed
 ` , 
                 productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-radiography-and-ct/computed-digital-radiography-crdr/computed-radiography-cassettes/crxvision-high-resolution-cr-scanner`  ,
                 imgSrc:`/assets/productImages/crx.png`
@@ -189,11 +190,9 @@ Enhanced Inspection Capability: Improves probability of detection, speeds up wor
             {
                 sectorName :"RADIOGRAPHIC TESTING (RT) SOLUTIONS" , 
                 productName : "Digital X-Ray Detectors" ,
-                productDetails :`Sensor Technology: Amorphous silicon or selenium flat panel detectors with direct X-ray conversion, offering pixel pitches <100 μm for high spatial resolution.\n
-Image Quality: Wide dynamic range (>14-bit) with 16-bit digitization, enabling accurate imaging across diverse material densities.\n
-Acquisition Speed: High frame rates (>30 fps) for real-time radiography, supporting dynamic inspection processes.\n
-Environmental Durability: IP65/67 rated enclosures designed for harsh industrial environments, ensuring durability and reliability.\n
-Image Processing: Advanced algorithms, including multi-frame averaging and adaptive histogram equalization, for enhanced defect detection and analysis.` , 
+                productDetails :` DXR75P-HR: Small size, high-resolution detector for critical applications.75-micron pixel resolution delivers fine details for critical applications .Narrow width ideal for situations with limited detector positioning freedom.Precision imaging that meets the most stringent standards\n
+DXR140P-HC: Large size, high contrast detector for all-purpose radiography.Ideal for corrosion monitoring in the oil & gas and energy industries.High contrast with 140-micron pixel resolution.Increased dose sensitivity for shorter exposure times and faster throughput.Can be used with X-ray as well as isotopes.\n
+DXR100P-HP: Large size, high performing imager, covering most applications.The DXR100P-HP gives you the high, 100-micron pixel resolution, so this versatile detector can cover both worlds: O&G inspections but also weld inspection, supporting ISO 17636-2 class B for weld inspection.` , 
                 productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-radiography-and-ct/computed-digital-radiography-crdr/dxr-digital-xray-detectors`  ,
                 imgSrc:`/assets/productImages/dxr.png`
 

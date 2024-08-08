@@ -12,7 +12,7 @@ const Layout: React.FC<Props> = (props) => (
     <div className="layout">{props.children}</div>
     
 
-    <Footer slogan="Precision Tools, Unmatched Service" logoSrc="/assets/wg_lg_tl_stk_4cp_pos.jpg" logoAlt="Company Logo" />
+    <Footer slogan="Precision Tools, Unmatched Service" logoSrc="/assets/image.png" logoAlt="Company Logo" />
   </div>
 );
 

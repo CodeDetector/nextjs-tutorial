@@ -36,6 +36,15 @@
   .customCaret.open {
     transform: rotate(180deg);
   }
+  .navbarContainer{
+    display: flex;
+    width: 100vw;
+    padding-left: 0%;
+    padding-right: 0%;
+    /* margin-left: 0%; */
+    justify-content: space-between;
+    /* margin-right: 0%; */
+  }
   
 @media (max-width: 991px) {
   .navbarCollapse {
