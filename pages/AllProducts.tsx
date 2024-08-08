@@ -23,15 +23,11 @@ Enhanced inspection results: Improves probability of detection, speeds up workfl
             {
                 sectorName :"REMOTE VISUAL INSPECTION (RVI) SOLUTIONS" , 
                 productName : "Mentor Flex" ,
-                productDetails :`Advanced Inspection Capabilities: Everest Mentor Flex provides high-resolution imaging and precise defect detection for comprehensive inspections.\n
-
-User-Friendly Interface: Features an intuitive touchscreen interface and customizable menus to streamline the inspection process and reduce training time.\n
-
-Durable and Portable: Designed for rugged environments with a lightweight, portable form factor, and an IP65 rating for dust and water resistance.\n
-
-Enhanced Connectivity: Offers Wi-Fi and Bluetooth capabilities for real-time data sharing, remote collaboration, and integration with cloud-based platforms.\n
-
-Versatile Functionality: Equipped with advanced analysis tools, dual-view capabilities, and a range of interchangeable probes for various inspection needs.`, 
+                productDetails :`Wide XGA Touchscreen Display: The device features a wide XGA touchscreen display with improved brightness and viewing angles, allowing users to see more details and increase the probability of detection.\n
+Intuitive User Interface and MDI: The intuitive user interface and Menu Directed Inspection (MDI) speed up the workflow with digital tools for auto image tagging and report generation, enabling inspectors to consistently deliver results with confidence.\n
+Advanced Mechanical Design: The advanced mechanical design enables increased articulation range and extended life to ensure thorough inspections of the entire asset in less time.\n
+Wireless Capabilities: The device offers wireless video streaming and data transfer capabilities to iOS and Android devices, powered by InspectionWorks.\n
+Measurement and Imaging Features: It provides Real3D Stereo Measurement for accurate and precise defect assessment through a 3D point cloud, and High Dynamic Range (HDR) optimizes image quality in scenes with shiny surfaces. Additionally, it maintains up-to-date functionality with easy wireless upgrades and software releases.`, 
                 productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/remote-visual-inspection-rvi/video-borescopes/everest-mentor-flex`  ,
                 imgSrc:`/assets/productImages/mentorflex.png`
 
@@ -131,15 +127,11 @@ Durable and Robust: Built to withstand harsh environments, the CL GO+ is rugged 
             {
                 sectorName :"Ultrasonics" , 
                 productName : "RotoArray comPAct" ,
-                productDetails :`Compact and Portable: The RotoArray comPAct is designed to be lightweight and portable, making it ideal for on-the-go inspections and use in tight spaces.\n
-
-High-Resolution Imaging: Provides superior imaging quality with advanced ultrasonic technology, ensuring precise and reliable defect detection.\n
-
-Versatile Application: Suitable for a wide range of applications, including weld inspections, corrosion mapping, and thickness measurements, catering to various industry needs.\n
-
-User-Friendly Interface: Features an intuitive interface with easy-to-navigate controls, allowing both experienced and novice users to operate the device efficiently.\n
-
-Robust Construction: Built to withstand harsh industrial environments, the RotoArray comPAct is durable and reliable, ensuring consistent performance under demanding conditions.`, 
+                productDetails :`Maximum Portability: A small, lightweight yet powerful all-in-one solution weighing just 0.85 kg empty and 1.2 kg filled with glycol, enabling maximum portability.\n
+Ease of Use: Ergonomic design and step-by-step instructions ensure easy and comprehensive operation, with pre-configured settings for phased array entry-level users.\n
+Connectivity: High-speed data transfer via USB port, allowing connection to tablets or PCs for easy sharing and storing of inspection data.\n
+Advanced Electronics: Fully integrated PA electronics directly into the probe, providing a true lightweight solution.\n
+Versatile Applications: Suitable for a wide range of challenging scenarios, from wind turbines to jet engines, due to its robust and portable design.`, 
                 productBakerHugesLink : `https://www.bakerhughes.com/waygate-technologies/industrial-ultrasonic-testing/portable-ultrasound-equipment/ultrasonic-applications/krautkramer-rotoarray-compact`  ,
                 imgSrc:`/assets/productImages/rotoarray.png`
 
